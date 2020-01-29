@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.Spinner?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<GridPane alignment="center" hgap="10" prefHeight="658.0" prefWidth="1290.0" vgap="10" xmlns="http://javafx.com/javafx/8.0.231" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.Controller">
+   <columnConstraints>
+      <ColumnConstraints fillWidth="false" maxWidth="159.0" minWidth="12.0" prefWidth="12.0" />
+      <ColumnConstraints maxWidth="274.0" minWidth="141.0" prefWidth="236.0" />
+      <ColumnConstraints maxWidth="221.0" minWidth="0.0" prefWidth="0.0" />
+      <ColumnConstraints maxWidth="338.0" minWidth="141.0" prefWidth="277.0" />
+      <ColumnConstraints maxWidth="305.0" minWidth="0.0" prefWidth="0.0" />
+      <ColumnConstraints maxWidth="221.0" minWidth="62.0" prefWidth="71.0" />
+      <ColumnConstraints maxWidth="432.0" minWidth="0.0" prefWidth="0.0" />
+      <ColumnConstraints maxWidth="854.0" minWidth="137.0" prefWidth="144.0" />
+      <ColumnConstraints maxWidth="999.0" minWidth="0.0" prefWidth="0.0" />
+      <ColumnConstraints maxWidth="1015.0" minWidth="113.0" prefWidth="142.0" />
+      <ColumnConstraints maxWidth="1015.0" minWidth="0.0" prefWidth="2.0" />
+      <ColumnConstraints maxWidth="999.0" minWidth="0.0" prefWidth="310.0" />
+      <ColumnConstraints maxWidth="999.0" minWidth="3.0" prefWidth="4.0" />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints maxHeight="282.0" minHeight="5.0" prefHeight="5.0" />
+      <RowConstraints maxHeight="282.0" minHeight="18.0" prefHeight="18.0" />
+      <RowConstraints maxHeight="481.0" minHeight="20.0" prefHeight="20.0" />
+      <RowConstraints maxHeight="307.0" minHeight="7.0" prefHeight="46.0" />
+      <RowConstraints maxHeight="307.0" minHeight="7.0" prefHeight="46.0" />
+      <RowConstraints maxHeight="307.0" minHeight="3.0" prefHeight="47.0" />
+      <RowConstraints maxHeight="307.0" minHeight="31.0" prefHeight="53.0" />
+      <RowConstraints maxHeight="307.0" minHeight="6.0" prefHeight="36.0" />
+      <RowConstraints maxHeight="307.0" minHeight="36.0" prefHeight="44.0" />
+      <RowConstraints maxHeight="307.0" minHeight="0.0" prefHeight="0.0" />
+      <RowConstraints maxHeight="307.0" minHeight="10.0" prefHeight="43.0" />
+      <RowConstraints maxHeight="282.0" minHeight="64.0" prefHeight="194.0" />
+      <RowConstraints maxHeight="282.0" minHeight="0.0" prefHeight="0.0" />
+   </rowConstraints>
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="286.0" stroke="#dadada" strokeType="INSIDE" strokeWidth="0.0" width="930.0" GridPane.columnIndex="1" GridPane.rowIndex="4">
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#b1dd00" />
+                  <Stop color="#ebebeb" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Rectangle>
+      <Pane prefHeight="282.0" prefWidth="310.0" GridPane.columnIndex="1" />
+      <TextField fx:id="item_id" prefHeight="41.0" prefWidth="274.0" promptText="your product id" GridPane.columnIndex="1" GridPane.rowIndex="3">
+         <font>
+            <Font size="22.0" />
+         </font></TextField>
+      <Label text="THEFOODHALL" textFill="#b20000" GridPane.columnIndex="1" GridPane.rowIndex="1">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+      <Button fx:id="insert" mnemonicParsing="false" onMouseClicked="#insertClick" prefHeight="37.0" prefWidth="177.0" text="Insert" GridPane.columnIndex="9" GridPane.rowIndex="5" />
+      <Button fx:id="update" mnemonicParsing="false" onMouseClicked="#updateClick" prefHeight="34.0" prefWidth="138.0" text="Update" GridPane.columnIndex="9" GridPane.rowIndex="11" />
+      <Button fx:id="delete" mnemonicParsing="false" onMouseClicked="#deleteClick" prefHeight="32.0" prefWidth="140.0" text="Delete" GridPane.columnIndex="7" GridPane.rowIndex="11" />
+      <Label text="Product Code" GridPane.columnIndex="1" GridPane.rowIndex="2">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Label>
+      <Label text="Product Name" GridPane.columnIndex="3" GridPane.rowIndex="2">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <Label text="Qty" GridPane.columnIndex="5" GridPane.rowIndex="2">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <Label text="Price" GridPane.columnIndex="7" GridPane.rowIndex="2">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <Label text="Total" GridPane.columnIndex="9" GridPane.rowIndex="2">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <Label text="Notes" GridPane.columnIndex="11" GridPane.rowIndex="2">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Label>
+      <Label text="." GridPane.columnIndex="11" GridPane.rowIndex="5">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Label>
+      <Label text="." GridPane.columnIndex="11" GridPane.rowIndex="7">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <TextField fx:id="item_name" prefHeight="48.0" prefWidth="258.0" promptText="your product name" GridPane.columnIndex="3" GridPane.rowIndex="3">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="item_price" prefHeight="0.0" prefWidth="140.0" promptText="insert the price per item" GridPane.columnIndex="7" GridPane.rowIndex="3">
+         <font>
+            <Font size="22.0" />
+         </font></TextField>
+      <TextField fx:id="item_total" editable="false" prefHeight="0.0" prefWidth="138.0" GridPane.columnIndex="9" GridPane.rowIndex="3">
+         <font>
+            <Font size="22.0" />
+         </font></TextField>
+      <TextField fx:id="notes" prefHeight="149.0" prefWidth="215.0" GridPane.columnIndex="11" GridPane.rowIndex="3">
+         <font>
+            <Font size="22.0" />
+         </font></TextField>
+      <TextField prefHeight="201.0" prefWidth="215.0" promptText="." GridPane.columnIndex="11" GridPane.rowIndex="6">
+         <font>
+            <Font size="22.0" />
+         </font></TextField>
+      <TextField editable="false" prefHeight="148.0" prefWidth="215.0" GridPane.columnIndex="11" GridPane.rowIndex="8">
+         <font>
+            <Font size="22.0" />
+         </font></TextField>
+      <TextArea prefHeight="200.0" prefWidth="306.0" GridPane.columnIndex="11" GridPane.rowIndex="11" />
+      <TableView fx:id="itemTable" editable="true" prefHeight="54.0" prefWidth="499.0" GridPane.columnIndex="1" GridPane.columnSpan="9" GridPane.rowIndex="6" GridPane.rowSpan="5">
+        <columns>
+          <TableColumn fx:id="t_item_id" prefWidth="42.00001525878906" sortable="false" text="item_id" />
+          <TableColumn fx:id="t_item_name" editable="false" prefWidth="358.0" sortable="false" text="item_name" />
+            <TableColumn fx:id="t_item_qty" editable="false" prefWidth="442.0" sortable="false" text="item_quantity" />
+            <TableColumn fx:id="t_item_price" prefWidth="75.0" text="item_price" />
+            <TableColumn fx:id="t_item_total" prefWidth="75.0" text="item_total" />
+            <TableColumn fx:id="t_item_type" prefWidth="75.0" text="Type" />
+            <TableColumn fx:id="t_item_notes" prefWidth="75.0" text="Notes" />
+        </columns>
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
+      </TableView>
+      <Button fx:id="print" mnemonicParsing="false" prefHeight="48.0" prefWidth="332.0" GridPane.columnIndex="11" GridPane.rowIndex="10">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Button>
+      <Separator halignment="RIGHT" orientation="VERTICAL" GridPane.columnIndex="10" GridPane.rowIndex="2" GridPane.rowSpan="10" />
+      <Spinner fx:id="item_qty" editable="true" prefHeight="58.0" prefWidth="67.0" GridPane.columnIndex="5" GridPane.rowIndex="3" />
+      <Button fx:id="refresh" mnemonicParsing="false" onAction="#refreshNew" prefHeight="33.0" prefWidth="67.0" text="Refresh" GridPane.columnIndex="5" GridPane.rowIndex="11" />
+      <Button fx:id="update2" alignment="CENTER" contentDisplay="RIGHT" mnemonicParsing="false" onAction="#updateNew" onMouseClicked="#updateNew" prefHeight="33.0" prefWidth="273.0" text="Update Products" textAlignment="RIGHT" GridPane.columnIndex="3" GridPane.rowIndex="11" />
+      <Button fx:id="btnBack" mnemonicParsing="false" onMouseClicked="#backButtonAction" prefHeight="30.0" prefWidth="48.0" text="BACK" GridPane.columnIndex="1" GridPane.rowIndex="11">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </Button>
+      <Label text="Type" GridPane.columnIndex="1" GridPane.rowIndex="4">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="types" prefHeight="39.0" prefWidth="231.0" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+   </children>
+</GridPane>

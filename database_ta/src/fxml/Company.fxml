@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="480.0" prefWidth="750.0" xmlns="http://javafx.com/javafx/8.0.231" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.CompanyController">
+    <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="428.0" smooth="false" stroke="WHITE" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeType="INSIDE" width="219.0">
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#1e92ff" />
+                  <Stop color="#0084ff" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </fill></Rectangle>
+        <TableView fx:id="tableCompany" layoutX="220.0" layoutY="28.0" prefHeight="289.0" prefWidth="520.0">
+            <columns>
+                <TableColumn fx:id="company_id" prefWidth="60" text="Id" />
+                <TableColumn fx:id="company_name" prefWidth="120.0" text="Company Name" />
+                <TableColumn fx:id="company_tax_number" prefWidth="60.0" text="Tax No" />
+                <TableColumn fx:id="company_address" prefWidth="100.0" text="Address" />
+                <TableColumn fx:id="company_building" prefWidth="100.0" text="Building" />
+                <TableColumn fx:id="company_city" prefWidth="80.0" text="City" />
+            </columns>
+        </TableView>
+        <Button fx:id="refresh" layoutX="580.0" layoutY="324.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="25.0" prefWidth="80.0" text="Refresh" />
+        <Button fx:id="insertData" layoutX="100.0" layoutY="324.0" mnemonicParsing="false" onAction="#insertData" prefHeight="43.0" prefWidth="100.0" text="Insert">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Button>
+        <Button fx:id="updateData" layoutX="100.0" layoutY="374.0" mnemonicParsing="false" onAction="#updateData" prefHeight="25.0" prefWidth="100.0" text="Update">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Button>
+        <Button fx:id="deleteData" layoutX="660.0" layoutY="324.0" mnemonicParsing="false" onAction="#deleteClick" prefHeight="25.0" prefWidth="80.0" text="Delete">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Button>
+        <TextField fx:id="companyId" layoutX="100.0" layoutY="97.0" prefHeight="35.0" prefWidth="100.0" />
+        <TextField fx:id="companyName" layoutX="100.0" layoutY="153.0" prefHeight="25.0" prefWidth="100.0" />
+        <TextField fx:id="address" layoutX="100.0" layoutY="221.0" prefHeight="25.0" prefWidth="100.0" />
+        <TextField fx:id="tax_number" layoutX="100.0" layoutY="255.0" prefHeight="25.0" prefWidth="100.0" />
+        <TextField fx:id="city" layoutX="100.0" layoutY="290.0" prefHeight="25.0" prefWidth="100.0" />
+        <Text layoutX="15.0" layoutY="119.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Company ID:">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font></Text>
+        <Text layoutX="11.0" layoutY="170.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Comp. Name:">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font></Text>
+        <Text layoutX="42.0" layoutY="203.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tax No">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font></Text>
+        <Text layoutX="40.0" layoutY="238.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Address:">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font></Text>
+        <Text layoutX="33.0" layoutY="273.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Building:">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font></Text>
+        <Text layoutX="60.0" layoutY="307.0" strokeType="OUTSIDE" strokeWidth="0.0" text="City:">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font></Text>
+      <Button fx:id="btnBack" layoutX="14.0" layoutY="441.0" mnemonicParsing="false" onMouseClicked="#backButtonAction" text="BACK">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font></Button>
+      <Label layoutX="50.0" layoutY="28.0" text="company" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <TextField fx:id="tax_no" layoutX="100.0" layoutY="186.0" prefHeight="25.0" prefWidth="100.0" />
+    </children>
+   <opaqueInsets>
+      <Insets />
+   </opaqueInsets>
+</AnchorPane>
